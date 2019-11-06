@@ -20,21 +20,20 @@ def directors_totals(nds)
   # Be sure to return the result at the end!
   # nil
   
-  
-  # count = 0
-  # index = nds[0][:movies][0].length + 2
-  # spielberg_tot = 0
-  # pic_tot = 0
-  # while count < index do
-  #   pic_tot = nds[0][:movies][count][:worldwide_gross]
-  #   spielberg_tot += pic_tot
-  #   index += 1
-  # end
-  
-  # result = {
-  #   "Steven Spielberg" => "#{spielberg_tot}"
-  # }
-  # result
+result = {}
+
+spielberg_index = 0
 
 
+spielberg_gross = 0
+count = 0
+index = nds[spielberg_index][:movies].length
+
+while count < index do
+  movie_gross = nds[spielberg_index][:movies][0][:worldwide_gross]
+  spielberg_gross += movie_gross
+  count += 1
+end
+
+spielberg_gross
 end
