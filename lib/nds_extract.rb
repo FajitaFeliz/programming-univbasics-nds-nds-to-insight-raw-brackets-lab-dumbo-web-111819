@@ -32,8 +32,8 @@ index = nds[spielberg_index][:movies].length
 while count < index do
   movie_gross = nds[spielberg_index][:movies][0][:worldwide_gross]
   spielberg_gross += movie_gross
+  puts spielberg_gross
   count += 1
 end
-
 spielberg_gross
 end
