@@ -83,5 +83,3 @@ def directors_totals(nds)
   end
   result
 end
-
-directors_totals(nds)
