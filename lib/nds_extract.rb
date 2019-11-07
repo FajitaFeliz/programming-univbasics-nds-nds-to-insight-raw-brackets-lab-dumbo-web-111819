@@ -61,7 +61,7 @@ def directors_totals(nds)
     count_outer += 1
 
     if dir_index == 1
-      result["Steven Spielberg"] = dir_gross
+      result["Stephen Spielberg"] = dir_gross
     elsif dir_index == 2
       result["Russo Brothers"] = dir_gross
     elsif dir_index == 3
